@@ -1,0 +1,173 @@
+.container{
+    height:100vh;
+    width:100%;
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin: 50px auto;
+    
+
+}
+.container h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px auto;
+}
+.face{
+    width: 200px;
+    height: 200px;
+    background-color:bisque;
+    border-radius: 10%;
+    position: relative;
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+}
+.hair{
+    width: 200px;
+    height: 70px;
+    background-color: black;
+    position: relative;
+    top: -1%;
+    left: 0%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.eyes{
+    width: 100%;
+    height: 40%;
+    position: relative ;
+    display:flex ;
+    top: 40%;
+}
+.leye{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    justify-content: center;
+    align-self: start;
+    margin-top: -70px;
+    margin-left: 50px;
+}
+.reye{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -70px;
+    margin-left: 40px;
+}
+.leye, .reye {
+    animation: blink 10s infinite ;
+}
+
+@keyframes blink {
+    0%, 92%, 100% {
+        height: 30px;
+    }
+    95% {
+        height: 5px;
+    }
+    97% {
+        height: 30px;
+    }
+}
+.mouth{
+    width: 50px;
+    height: 10px;
+    background-color: black;
+    position: relative;
+    left: -35%;
+    margin-top: -7px;
+    border-radius: 50%;
+    
+}
+.body{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.leftarm{
+    width: 25px;
+    height: 120px;
+    background-color: wheat;
+    position: relative;
+    left: -16%;
+    top: 11%;
+    border-radius: 10%;
+    border-top-left-radius: 50%;
+}
+.rightarm{
+    width: 25px;
+    height: 120px;
+    background-color: wheat;
+    position: relative;
+    left: 101.5%;
+    top: -50%;
+    border-radius: 10%;
+    border-top-right-radius: 50%;
+}
+.leftarm,.rightarm {
+    transform-origin: top left;
+    animation: wave 10s infinite ;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-20deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+}
+.lhand{
+    width: 25px;
+    height: 70px;
+    background-color: red;
+    position: relative;
+    left: -16%;
+    top: -109%;
+    border-top-left-radius: 50%; 
+}
+.rhand{
+     width: 25px;
+    height: 70px;
+    background-color: red;
+    position: relative;
+    left: 101.5%;
+    top: -145%;
+    border-top-right-radius: 50%;
+}
+.lhand,.rhand{
+    transform-origin: top left;
+    animation: wave 10s infinite ;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-20deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+}
